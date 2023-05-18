@@ -5,6 +5,7 @@ import Main from "./Layout/Main";
 import Login from "./Login";
 import Register from "./Register";
 import Home from "./Home";
+import ErrorPage from "./ErrorPage";
 
 
 
@@ -12,6 +13,7 @@ import Home from "./Home";
     {
       path: "/",
       element: <Main></Main>,
+     errorElement: <ErrorPage></ErrorPage>,
    
     children: [
       {
