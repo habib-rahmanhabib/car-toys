@@ -3,7 +3,7 @@
 const Banner = () => {
     return (
         <div>
-            <div className="carousel w-full my-8">
+            <div className="carousel w-full my-3">
                 <div id="slide1" className="carousel-item relative w-full">
                     <img src="https://cdn.create.vista.com/api/media/small/423537896/stock-photo-toy-car-gift-box-pink" className="w-full" />
                     <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
