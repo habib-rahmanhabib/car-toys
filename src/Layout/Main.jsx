@@ -5,7 +5,7 @@ import Navmenu from "../Navber";
 
 const Main = () => {
     return (
-        <div className="w-[80%] mx-auto">
+        <div className="w-[90%] mx-auto">
            <Navmenu></Navmenu>
             <Outlet></Outlet>
             <Footer></Footer>

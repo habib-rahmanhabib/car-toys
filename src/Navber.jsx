@@ -41,7 +41,7 @@ const Navmenu = () => {
                         </li>
                         <li><a> My Toys</a></li>
                         <li><a> Add Toys</a></li>
-                        <li><a></a></li>
+                        <li><a>Blogs</a></li>
                     </ul>
                 </div>
                 <div className="navbar-end">
