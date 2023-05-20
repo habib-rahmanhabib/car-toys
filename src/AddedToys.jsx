@@ -13,9 +13,10 @@ const AddedToys = () => {
         const quantity = form.quantity.value;
         const company = form.company.value;
         const date = form.date.value;
+        const price = form.price.value;
         const photo = form.photo.value;
 
-        const allInformation = { name, details, sellername, selleremail, quantity, company, date, photo }
+        const allInformation = { name, details, sellername, selleremail, quantity, company, date, photo, price }
         console.log(allInformation)
 
         fetch('http://localhost:5000/Toys', {
@@ -35,7 +36,7 @@ const AddedToys = () => {
         <div className='bg-green-800 my-2'>
             <form onSubmit={addToysHandler} className='p-3' >
                 <div className="flex mb-8">
-                    <div className="form-control md:w-1/3">
+                    <div className="form-control md:w-1/4">
                         <label className="label">
                             <span className="label-text text-1xl font-semibold">Name</span>
                         </label>
@@ -44,7 +45,16 @@ const AddedToys = () => {
                             <input type="text" placeholder="Enter Toys Name" name="name" className="input input-bordered w-full" />
                         </label>
                     </div>
-                    <div className="form-control md:w-1/3 ms-4">
+                    <div className="form-control md:w-1/4 ms-4">
+                        <label className="label">
+                            <span className="label-text text-1xl font-semibold">Price</span>
+                        </label>
+                        <label className="input-group ">
+
+                            <input type="text" placeholder="Enter The Price" name="price" className="input input-bordered w-full" />
+                        </label>
+                    </div>
+                    <div className="form-control md:w-1/4 ms-4">
                         <label className="label">
                             <span className="label-text text-1xl font-semibold">Details</span>
                         </label>
@@ -53,7 +63,7 @@ const AddedToys = () => {
                             <input type="text" placeholder="Enter Toy Details" name="details" className="input input-bordered w-full" />
                         </label>
                     </div>
-                    <div className="form-control md:w-1/3 ms-4">
+                    <div className="form-control md:w-1/4 ms-4">
                         <label className="label">
                             <span className="label-text text-1xl font-semibold">Seller Name</span>
                         </label>
@@ -95,11 +105,11 @@ const AddedToys = () => {
                     </div>
                     <div className="form-control md:w-1/4 ms-4">
                         <label className="label">
-                            <span className="label-text text-1xl font-semibold">Date</span>
+                            <span className="label-text text-1xl font-semibold">Catagory</span>
                         </label>
                         <label className="input-group ">
 
-                            <input type="Datetime-local" placeholder="Enter Time" name="date" className="input input-bordered w-full" />
+                            <input type="Datetime-local" placeholder="Enter Catagory" name="Catagory" className="input input-bordered w-full" />
                         </label>
                     </div>
 
@@ -108,14 +118,30 @@ const AddedToys = () => {
 
 
 
-                <div className="form-control md:w-full mb-8">
-                    <label className="label">
-                        <span className="label-text text-1xl font-semibold">Photo</span>
-                    </label>
-                    <label className="input-group ">
+                <div className="flex mb-8">
+                    <div className="form-control md:w-1/2 ms-4">
 
-                        <input type="text" placeholder="Enter Photo URL" name="photo" className="input input-bordered w-full" />
-                    </label>
+                        <label className="label">
+                            <span className="label-text text-1xl font-semibold">Photo</span>
+                        </label>
+                        <label className="input-group ">
+
+                            <input type="text" placeholder="Enter Photo URL" name="photo" className="input input-bordered w-full" />
+                        </label>
+                    </div>
+
+                    
+                        <div className="form-control md:w-1/2 ms-4">
+                            <label className="label">
+                                <span className="label-text text-1xl font-semibold">Date</span>
+                            </label>
+                            <label className="input-group ">
+
+                                <input type="Datetime-local" placeholder="Enter Time" name="date" className="input input-bordered w-full" />
+                            </label>
+                        </div>
+                   
+
                 </div>
 
 

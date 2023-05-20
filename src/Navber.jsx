@@ -25,7 +25,7 @@ const Navmenu = () => {
                         </ul>
                     </div>
                     <div className="flex ">
-                        <img className="w-12 h-12" src="https://media.istockphoto.com/id/184130803/photo/toy-car.jpg?s=612x612&w=is&k=20&c=pF3DGnIQ9zDGF73Mn5D94iBtJII7PxxHRY42Wo7EVgE=" alt="" />
+                        <img className="w-12 h-12" src="https://m.media-amazon.com/images/I/71jrSZJjiHL._AC_SL1500_.jpg" alt="" />
                         <a className="btn btn-ghost normal-case text-xl p-0">Toy Cars</a>
                     </div>
                 </div>
