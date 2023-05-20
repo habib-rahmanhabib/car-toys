@@ -31,7 +31,7 @@ const Footer = () => {
                             <span className="label-text">Enter your email address</span>
                         </label>
                         <div className="flex">
-                            <input type="text" placeholder="username@site.com" className="input  w-[50%] pr-16" />
+                            <input type="text" placeholder="username@site.com" className=" p-2 rounded w-[40%] " />
                             <button className="btn btn-primary">Submit</button>
                         </div>
                         {/* social icon */}

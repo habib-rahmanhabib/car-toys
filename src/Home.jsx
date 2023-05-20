@@ -46,7 +46,7 @@ const Home = () => {
             <div className=" text-center">
                 <h1 className="text-2xl font-semibold bg-black text-white py-2">Cars Gallary</h1>
             </div>
-            <Marquee speed={100} direction="right" delay={50}>
+            <Marquee speed={100} direction="right" >
 
                 {
                     toys.map(toy => <Gallary toy={toy} key={toys.id}></Gallary>)

@@ -15,32 +15,32 @@ const Navmenu = () => {
                             <li><a>Home</a></li>
                             <li tabIndex={0}>
                                 <a className="justify-between">
-                                   All Toys
-                                   
+                                    All Toys
+
                                 </a>
-                                
+
                             </li>
                             <li><a>My Toys</a></li>
                             <li><a>Add Toys</a></li>
                         </ul>
                     </div>
                     <div className="flex ">
-                    <img  className="w-12 h-12" src="https://media.istockphoto.com/id/184130803/photo/toy-car.jpg?s=612x612&w=is&k=20&c=pF3DGnIQ9zDGF73Mn5D94iBtJII7PxxHRY42Wo7EVgE=" alt="" />
-                    <a className="btn btn-ghost normal-case text-xl p-0">Toy Cars</a>
+                        <img className="w-12 h-12" src="https://media.istockphoto.com/id/184130803/photo/toy-car.jpg?s=612x612&w=is&k=20&c=pF3DGnIQ9zDGF73Mn5D94iBtJII7PxxHRY42Wo7EVgE=" alt="" />
+                        <a className="btn btn-ghost normal-case text-xl p-0">Toy Cars</a>
                     </div>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
                         <li className="text-bold"><Link to='/'>Home</Link></li>
                         <li tabIndex={0}>
-                            <a>
-                               All Toys
-                               
+                            <a >
+                                All Toys
                             </a>
-                           
+
+
                         </li>
-                        <li><a> My Toys</a></li>
-                        <li><a> Add Toys</a></li>
+                        <li><Link to='myToys'> My Toys</Link></li>
+                        <li><Link to='addToys'> Add Toys</Link></li>
                         <li><a>Blogs</a></li>
                     </ul>
                 </div>
