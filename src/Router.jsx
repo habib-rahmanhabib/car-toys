@@ -11,7 +11,8 @@ import MyToys from "./MyToys";
 import UpdateToys from "./UpdateToys";
 import Blogs from "./Blogs/Blogs";
 import AllToyes from "./AllToys/AllToyes";
-import PrivateRoute from "./PrivetRouter";
+
+import PrivatRoute from "./PrivetRouter";
 
 
 
@@ -37,11 +38,11 @@ import PrivateRoute from "./PrivetRouter";
       },
       {
         path:'addToys',
-        element:<PrivateRoute><AddedToys></AddedToys></PrivateRoute>
+        element:<PrivatRoute><AddedToys></AddedToys></PrivatRoute>
       },
       {
         path:'myToys',
-        element:<PrivateRoute><MyToys></MyToys></PrivateRoute>,
+        element:<PrivatRoute><MyToys></MyToys></PrivatRoute>,
         loader:  ()=>fetch('https://toy-fullstack-server-habib-rahmanhabib.vercel.app/Toys')
       },
       {

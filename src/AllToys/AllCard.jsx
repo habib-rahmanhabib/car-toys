@@ -1,7 +1,7 @@
 
 
 const AllCard = ({ toy }) => {
-    const { _id, name, details, sellername, selleremail, quantity, company, date, photo, price,  } = toy
+    const { _id, name,  sellername,  quantity,  photo, price,  } = toy
     return (
         <div>
             <div className="card card-side bg-base-100 shadow-xl">
@@ -15,7 +15,7 @@ const AllCard = ({ toy }) => {
                    <p className="text-amber-700 font-semibold">Price: ${price}</p>
                   
                     <div className="mt-7">
-                        <button className="btn btn-primary">Watch</button>
+                        <button className="btn btn-primary">View Details</button>
                     </div>
                 </div>
             </div>
