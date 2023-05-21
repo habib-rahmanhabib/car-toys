@@ -25,7 +25,7 @@ const ToyTablae = ({ toy, myToys, setmyToys }) => {
         //     'Your file has been deleted.',
         //     'success'
         //  
-        fetch(`http://localhost:5000/toys/${_id}`,{
+        fetch(`https://toy-fullstack-server-habib-rahmanhabib.vercel.app/toys/${_id}`,{
             method: 'DELETE'
         }
         )

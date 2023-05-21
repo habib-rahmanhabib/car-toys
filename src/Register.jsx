@@ -25,10 +25,10 @@ const Register = () => {
             })
     }
     return (
-        <div className='container w-50 mx-auto bg-purple-300 rounded-lg py-2'>
+        <div className='container w-50 mx-auto  rounded-lg py-2'>
             <h2 className=' w-80 py-2 mt-2 mx-auto text-purple-100 font-bold text-lg rounded-lg bg-purple-900 text-center'>Please Register Your Account </h2>
 
-            <form onSubmit={handleRegister} className="form-control w-full max-w-xs mx-auto">
+            <form onSubmit={handleRegister} className="form-control w-full max-w-xs mx-auto shadow-lg p-5 rounded">
                 <label className="label">
                     <span className="label-text font-bold">What is your name ?</span>
 

@@ -19,7 +19,7 @@ const AddedToys = () => {
         const allInformation = { name, details, sellername, selleremail, quantity, company, date, photo, price }
         console.log(allInformation)
 
-        fetch('http://localhost:5000/Toys', {
+        fetch('https://toy-fullstack-server-habib-rahmanhabib.vercel.app/Toys', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

@@ -41,17 +41,17 @@ import AllToyes from "./AllToys/AllToyes";
       {
         path:'myToys',
         element:<MyToys></MyToys>,
-        loader:  ()=>fetch('http://localhost:5000/Toys')
+        loader:  ()=>fetch('https://toy-fullstack-server-habib-rahmanhabib.vercel.app/Toys')
       },
       {
         path:'allToys',
         element:<AllToyes></AllToyes>,
-        loader: ()=>fetch('http://localhost:5000/Toys')
+        loader: ()=>fetch('https://toy-fullstack-server-habib-rahmanhabib.vercel.app/Toys')
       },
       {
         path:'updtaeToys/:id',
         element:<UpdateToys></UpdateToys>,
-        loader:  ({params})=>fetch(`http://localhost:5000/Toys/${params.id}`)
+        loader:  ({params})=>fetch(`https://toy-fullstack-server-habib-rahmanhabib.vercel.app/Toys/${params.id}`)
       },
       {
         path:'blogs',
