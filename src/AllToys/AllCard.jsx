@@ -8,11 +8,13 @@ const AllCard = ({ toy }) => {
                 {photo ?  <img className="w-56 h-56 m-4" src={photo}/> : <img className="w-56 h-56 m-4" src="https://demofree.sirv.com/nope-not-here.jpg" />}
             {/* <img className="w-56 h-56 m-4" src={photo}/>
             <img className="w-56 h-56 m-4" src="https://demofree.sirv.com/nope-not-here.jpg" alt="Movie" /> */}
-                <div className="card-body">
-                   <p>Name:{name}</p>
-                   <p>Quantity: {quantity}</p>
-                   <p>Price {price}</p>
-                    <div className="card-actions justify-end">
+                <div className="my-auto">
+                   <p className="text-amber-700 font-semibold">Name: {name}</p>
+                   <p className="text-amber-700 font-semibold">Seller: {sellername}</p>
+                   <p className="text-amber-700 font-semibold">Quantity: {quantity}</p>
+                   <p className="text-amber-700 font-semibold">Price: ${price}</p>
+                  
+                    <div className="mt-7">
                         <button className="btn btn-primary">Watch</button>
                     </div>
                 </div>
