@@ -5,15 +5,16 @@ import { AuthContext } from "./provider/AuthProviders";
 
 const Navmenu = () => {
     const {user , logOut} = useContext(AuthContext);
-
     const handleLogout = () => {
         logOut()
             .then()
-            .catch(error => console.log(error));
+            .catch(error => {
+                console.log(error)
+                alert("Logout successful")
+            });
     }
     return (
         <div>
-
             <div className="navbar  bg-fuchsia-200 my-3 rounded ">
                 <div className="navbar-start">
                     <div className="dropdown">
