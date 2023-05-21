@@ -5,7 +5,7 @@ import { AuthContext } from './provider/AuthProviders';
 import toast, { Toaster } from 'react-hot-toast';
 
 const Login = () => {
-    const { signIn, googleLogin, githubLogin } = useContext(AuthContext);
+    const { signIn, googleLogin} = useContext(AuthContext);
     const [error, setError] = useState('')
 
 

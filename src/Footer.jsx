@@ -48,6 +48,11 @@ const Footer = () => {
                     </div>
                 </div>
             </footer>
+        
+            <div >
+                <h1 className="text-center tex-2xl font-bold my-4">Copyright Policy 2023</h1>
+            </div>
+            <hr />
         </div>
     );
 };
