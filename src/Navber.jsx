@@ -41,7 +41,7 @@ const Navmenu = () => {
                         </li>
                         <li><Link to='myToys'> My Toys</Link></li>
                         <li><Link to='addToys'> Add Toys</Link></li>
-                        <li><a>Blogs</a></li>
+                        <li><Link to='blogs'>Blogs</Link></li>
                     </ul>
                 </div>
                 <div className="navbar-end">

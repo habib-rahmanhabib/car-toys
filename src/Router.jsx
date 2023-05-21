@@ -9,6 +9,7 @@ import ErrorPage from "./ErrorPage";
 import AddedToys from "./AddedToys";
 import MyToys from "./MyToys";
 import UpdateToys from "./UpdateToys";
+import Blogs from "./Blogs/Blogs";
 
 
 
@@ -45,6 +46,10 @@ import UpdateToys from "./UpdateToys";
         path:'updtaeToys/:id',
         element:<UpdateToys></UpdateToys>,
         loader:  ({params})=>fetch(`http://localhost:5000/Toys/${params.id}`)
+      },
+      {
+        path:'blogs',
+        element:<Blogs></Blogs>
       }
     ]
   },

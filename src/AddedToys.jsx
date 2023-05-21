@@ -38,7 +38,7 @@ const AddedToys = () => {
                 <div className="flex mb-8">
                     <div className="form-control md:w-1/4">
                         <label className="label">
-                            <span className="label-text text-1xl font-semibold">Name</span>
+                            <span className="label-text text-1xl font-semibold text-white">Name</span>
                         </label>
                         <label className="input-group ">
 
@@ -47,7 +47,7 @@ const AddedToys = () => {
                     </div>
                     <div className="form-control md:w-1/4 ms-4">
                         <label className="label">
-                            <span className="label-text text-1xl font-semibold">Price</span>
+                            <span className="label-text text-1xl font-semibold text-white">Price</span>
                         </label>
                         <label className="input-group ">
 
@@ -56,7 +56,7 @@ const AddedToys = () => {
                     </div>
                     <div className="form-control md:w-1/4 ms-4">
                         <label className="label">
-                            <span className="label-text text-1xl font-semibold">Details</span>
+                            <span className="label-text text-1xl font-semibold text-white">Details</span>
                         </label>
                         <label className="input-group">
 
@@ -65,7 +65,7 @@ const AddedToys = () => {
                     </div>
                     <div className="form-control md:w-1/4 ms-4">
                         <label className="label">
-                            <span className="label-text text-1xl font-semibold">Seller Name</span>
+                            <span className="label-text text-1xl font-semibold text-white">Seller Name</span>
                         </label>
                         <label className="input-group ">
 
@@ -78,7 +78,7 @@ const AddedToys = () => {
 
                     <div className="form-control md:w-1/4 ">
                         <label className="label">
-                            <span className="label-text text-1xl font-semibold">Seller Email</span>
+                            <span className="label-text text-1xl font-semibold text-white">Seller Email</span>
                         </label>
                         <label className="input-group">
 
@@ -87,7 +87,7 @@ const AddedToys = () => {
                     </div>
                     <div className="form-control md:w-1/4 ms-4">
                         <label className="label">
-                            <span className="label-text text-1xl font-semibold">Quantity</span>
+                            <span className="label-text text-1xl font-semibold text-white">Quantity</span>
                         </label>
                         <label className="input-group ">
 
@@ -96,7 +96,7 @@ const AddedToys = () => {
                     </div>
                     <div className="form-control md:w-1/4 ms-4">
                         <label className="label">
-                            <span className="label-text text-1xl font-semibold">Comapny</span>
+                            <span className="label-text text-1xl font-semibold text-white">Comapny</span>
                         </label>
                         <label className="input-group ">
 
@@ -105,11 +105,11 @@ const AddedToys = () => {
                     </div>
                     <div className="form-control md:w-1/4 ms-4">
                         <label className="label">
-                            <span className="label-text text-1xl font-semibold">Catagory</span>
+                            <span className="label-text text-1xl font-semibold text-white">Catagory</span>
                         </label>
                         <label className="input-group ">
 
-                            <input type="Datetime-local" placeholder="Enter Catagory" name="Catagory" className="input input-bordered w-full" />
+                            <input type="text" placeholder="Enter Catagory" name="Catagory" className="input input-bordered w-full" />
                         </label>
                     </div>
 
@@ -122,7 +122,7 @@ const AddedToys = () => {
                     <div className="form-control md:w-1/2 ms-4">
 
                         <label className="label">
-                            <span className="label-text text-1xl font-semibold">Photo</span>
+                            <span className="label-text text-1xl font-semibold text-white">Photo</span>
                         </label>
                         <label className="input-group ">
 
@@ -133,7 +133,7 @@ const AddedToys = () => {
                     
                         <div className="form-control md:w-1/2 ms-4">
                             <label className="label">
-                                <span className="label-text text-1xl font-semibold">Date</span>
+                                <span className="label-text text-1xl font-semibold text-white">Date</span>
                             </label>
                             <label className="input-group ">
 
