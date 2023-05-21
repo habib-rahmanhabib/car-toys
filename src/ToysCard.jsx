@@ -6,7 +6,7 @@ const ToysCard = ({ toy }) => {
     const { name, picture, price, rating } = toy
     return (
         <div>
-            <div className="  rounded-sm shadow-lg">
+            <div className="  rounded-sm shadow-lg " data-aos="fade-right">
                <img className="w-56 h-56 mx-auto" src={picture} alt="Shoes" />
                <hr />
                 <div className="ms-4">

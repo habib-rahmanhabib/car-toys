@@ -8,6 +8,7 @@ import Home from "./Home";
 import ErrorPage from "./ErrorPage";
 import AddedToys from "./AddedToys";
 import MyToys from "./MyToys";
+import UpdateToys from "./UpdateToys";
 
 
 
@@ -39,6 +40,11 @@ import MyToys from "./MyToys";
         path:'myToys',
         element:<MyToys></MyToys>,
         loader:  ()=>fetch('http://localhost:5000/Toys')
+      },
+      {
+        path:'updtaeToys/:id',
+        element:<UpdateToys></UpdateToys>,
+        loader:  ({params})=>fetch(`http://localhost:5000/Toys/${params.id}`)
       }
     ]
   },

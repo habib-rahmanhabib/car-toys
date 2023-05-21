@@ -3,7 +3,11 @@
 const Footer = () => {
     return (
         <div >
-            <footer className="footer p-10 bg-base-200 text-base-content mx-auto">
+            <footer className="footer grid md:grid-cols-5 p-7 gap-4 bg-base-200 text-base-content mx-auto">
+
+                <div>
+                    <img className="" src="https://m.media-amazon.com/images/I/81ZC-BN4YeL._AC_SX679_.jpg" alt="" />
+                </div>
                 <div>
                     <span className="footer-title">Services</span>
                     <a className="link link-hover">Branding</a>

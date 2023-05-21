@@ -6,6 +6,7 @@ import Marquee from "react-fast-marquee";
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 import Gallary from "./Gallary";
+import OurVisitor from "./OurVisitor";
 
 const Home = () => {
     const [toys, setToyes] = useState([])
@@ -52,6 +53,9 @@ const Home = () => {
                     toys.map(toy => <Gallary toy={toy} key={toys.id}></Gallary>)
                 }
             </Marquee  >
+            <hr />
+
+            <OurVisitor></OurVisitor>
             <div>
                 <h1 className="text-2xl font-semiboldbold text-white bg-black py-3 text-center">Shop By Category:</h1>
             </div>
@@ -124,6 +128,8 @@ const Home = () => {
                 </TabPanel>
 
             </Tabs>
+
+            
 
 
 

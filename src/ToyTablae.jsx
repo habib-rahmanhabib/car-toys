@@ -1,5 +1,6 @@
 import React from 'react';
 import { BeakerIcon , TrashIcon} from '@heroicons/react/24/solid'
+import { Link } from 'react-router-dom';
 
 import Swal from 'sweetalert2'
 
@@ -64,7 +65,8 @@ const ToyTablae = ({ toy }) => {
 
                             <p><span className=' font-semibold'>Name:</span> {name}</p>
                             <p><span className=' font-semibold'>Price:</span> {price}</p>
-                            <p><span className=' font-semibold'>Quantity:</span> {name}</p>
+                            <p><span className=' font-semibold'>Quantity:</span> {quantity }</p>
+                           
                         </div>
                     </div>
                 </td>
@@ -74,7 +76,9 @@ const ToyTablae = ({ toy }) => {
                 </td>
                 <td>
                     <div className=' flex items-center gap-3'>
+                        <Link to={`/updtaeToys/${_id}`}>
                         <button className=' font-semibold bg-green-300 px-2 rounded'>Edit</button>
+                        </Link>
                         <button className='' onClick={()=>deleteHandler(_id)}>
                             <TrashIcon className="h-7 w-7 text-blue-500 " /></button>
                     </div>
