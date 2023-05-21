@@ -126,7 +126,7 @@ const AddedToys = () => {
                         </label>
                         <label className="input-group ">
 
-                            <input type="text" placeholder="Enter Photo URL" name="photo" className="input input-bordered w-full" />
+                            <input type="text" placeholder="Enter Photo URL" name="photo" required className="input input-bordered w-full" />
                         </label>
                     </div>
 

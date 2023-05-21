@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 import Swal from 'sweetalert2'
 
-const ToyTablae = ({ toy }) => {
+const ToyTablae = ({ toy, myToys, setmyToys }) => {
    
     const {_id, name, details, sellername, selleremail, quantity, company, date, photo, price } = toy
 
@@ -37,6 +37,8 @@ const ToyTablae = ({ toy }) => {
             'Your file has been deleted.',
             'success'
                    )
+                   const remaing = myToys.filter(pd => pd._id !== _id)
+                   setmyToys(remaing)
             }
             console.log(data)
         })

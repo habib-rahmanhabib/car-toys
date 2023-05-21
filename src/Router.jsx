@@ -10,6 +10,7 @@ import AddedToys from "./AddedToys";
 import MyToys from "./MyToys";
 import UpdateToys from "./UpdateToys";
 import Blogs from "./Blogs/Blogs";
+import AllToyes from "./AllToys/AllToyes";
 
 
 
@@ -41,6 +42,11 @@ import Blogs from "./Blogs/Blogs";
         path:'myToys',
         element:<MyToys></MyToys>,
         loader:  ()=>fetch('http://localhost:5000/Toys')
+      },
+      {
+        path:'allToys',
+        element:<AllToyes></AllToyes>,
+        loader: ()=>fetch('http://localhost:5000/Toys')
       },
       {
         path:'updtaeToys/:id',

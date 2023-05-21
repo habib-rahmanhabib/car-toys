@@ -33,10 +33,7 @@ const Navmenu = () => {
                     <ul className="menu menu-horizontal px-1">
                         <li className="text-bold"><Link to='/'>Home</Link></li>
                         <li tabIndex={0}>
-                            <a >
-                                All Toys
-                            </a>
-
+                            <Link to='allToys'>All Toys</Link>
 
                         </li>
                         <li><Link to='myToys'> My Toys</Link></li>

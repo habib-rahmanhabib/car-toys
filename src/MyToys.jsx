@@ -1,9 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useLoaderData } from 'react-router-dom';
 import ToyTablae from './ToyTablae';
 
 const MyToys = () => {
-    const myToys = useLoaderData()
+  
+    const myToyss = useLoaderData()
+    const [myToys, setmyToys] = useState(myToyss)
+    console.log(myToys)
     return (
         <div>
 
@@ -28,6 +31,8 @@ const MyToys = () => {
                         myToys.map(toy => <ToyTablae
                             key={toy._id}
                             toy={toy}
+                            myToys={myToys}
+                            setmyToys={setmyToys}
                         ></ToyTablae>)
                     }
 
